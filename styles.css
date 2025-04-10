@@ -3,8 +3,8 @@
 body {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
-	background-color: #0c1f66;
-	color: #e4c17c;
+	background-color: #ffffff;
+	color: #0c1f66;
   }
   
   .navbar {
@@ -12,7 +12,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
-	background-color: #0c1f66;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e0e0e0;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -24,11 +25,12 @@ body {
 	gap: 0.5rem;
 	font-weight: 700;
 	font-size: 1.2rem;
+	color: #0c1f66;
   }
   
   nav a {
 	margin-left: 1.5rem;
-	color: #e4c17c;
+	color: #0c1f66;
 	text-decoration: none;
 	font-weight: 500;
   }
@@ -43,17 +45,19 @@ body {
 	align-items: center;
 	padding: 4rem 2rem;
 	gap: 2rem;
-	background-color: #0c1f66;
+	background-color: #ffffff;
   }
   
   .hero-text h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
+	color: #0c1f66;
   }
   
   .hero-text p {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
+	color: #333;
   }
   
   .hero-image img {
@@ -62,8 +66,8 @@ body {
   }
   
   .btn {
-	background-color: #e4c17c;
-	color: #0c1f66;
+	background-color: #0c1f66;
+	color: #ffffff;
 	padding: 0.8rem 1.6rem;
 	border-radius: 8px;
 	text-decoration: none;
@@ -71,10 +75,11 @@ body {
   }
   
   footer {
-	background-color: #0c1f66;
-	color: #e4c17c;
+	background-color: #f5f5f5;
+	color: #333;
 	text-align: center;
 	padding: 1rem;
 	font-size: 0.9rem;
+	border-top: 1px solid #e0e0e0;
   }
   
