@@ -1,32 +1,65 @@
 
 /* styles.css */
 body {
-	font-family: sans-serif;
+	font-family: 'Inter', sans-serif;
 	margin: 0;
-	background-color: #0c1f66; /* Deep blue */
-	color: #e4c17c; /* Gold tone */
-  }
-  
-  header {
 	background-color: #0c1f66;
 	color: #e4c17c;
-	padding: 1rem;
-	text-align: center;
+  }
+  
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: #0c1f66;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+  }
+  
+  .logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 700;
+	font-size: 1.2rem;
   }
   
   nav a {
-	margin: 0 1rem;
+	margin-left: 1.5rem;
 	color: #e4c17c;
 	text-decoration: none;
+	font-weight: 500;
   }
   
   nav a:hover {
 	text-decoration: underline;
   }
   
-  main {
-	padding: 2rem;
+  .hero {
+	padding: 5rem 2rem;
 	text-align: center;
+	background-color: #132574;
+  }
+  
+  .hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .hero p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .btn {
+	background-color: #e4c17c;
+	color: #0c1f66;
+	padding: 0.8rem 1.6rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
   }
   
   footer {
@@ -34,8 +67,6 @@ body {
 	color: #e4c17c;
 	text-align: center;
 	padding: 1rem;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+	font-size: 0.9rem;
   }
   
