@@ -52,6 +52,7 @@ body {
 	background-color: #f8f9fc;
 	padding: 4rem 2rem;
   }
+
   
   .hero-content {
 	display: flex;
@@ -166,7 +167,7 @@ body {
   }
   
 
-/* About Page */
+/* About Page Styles */
 .about-section {
 	padding: 4rem 2rem;
 	max-width: 800px;
@@ -288,8 +289,8 @@ body {
 	cursor: pointer;
 	font-weight: 600;
   }
-  
-  .contact-form button:hover {
+
+.contact-form button:hover {
 	background-color: #0a194f;
-  }
+}
   
