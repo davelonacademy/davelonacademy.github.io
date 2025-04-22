@@ -355,6 +355,7 @@ body {
 	margin: 3rem 0;
 	text-align: center;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+	max-width: 50%;
   }
   
   .career-journey h2 {
@@ -394,7 +395,7 @@ body {
   }
   
   .journey-step {
-	padding: 0.8rem 1.5rem;
+	padding: 0.8rem 0.5rem;
 	border: 2px solid #2d287c;
 	border-radius: 999px;
 	font-weight: 600;
