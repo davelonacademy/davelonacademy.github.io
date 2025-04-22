@@ -43,15 +43,15 @@
             <div class="slide active">
               <h3>Database Optimization Path</h3>
               <div class="journey-flow">
-                <div class="journey-step">Start</div>
+                <div class="journey-step">Core SQL Mastery</div>
                 <div class="journey-arrow">➔</div>
-                <div class="journey-step">3 Months</div>
+                <div class="journey-step">Optimization Skills</div>
                 <div class="journey-arrow">➔</div>
-                <div class="journey-step">6 Months ⭐</div>
+                <div class="journey-step">Real-world Projects ⭐</div>
                 <div class="journey-arrow">➔</div>
-                <div class="journey-step">Beyond</div>
+                <div class="journey-step">Data Insights Specialist</div>
               </div>
-              <p>Master tuning skills and move toward Senior DBA and Performance Engineering roles.</p>
+              <p>Grow into Data Analyst, Junior Data Scientist, and Insights roles.</p>
             </div>
 
             <!-- Slide 2 -->
@@ -66,7 +66,8 @@
                 <div class="journey-arrow">➔</div>
                 <div class="journey-step">Beyond</div>
               </div>
-              <p>Bridge business and technology. Become an industry-ready Data Translator.</p>
+              </p>Grow into Data Analyst, Junior Data Scientist, and Insights roles.</p>
+              
             </div>
 
             <!-- Slide 3 -->
@@ -180,21 +181,46 @@
   </footer>
 
   <script>
-    const dots = document.querySelectorAll('.dot');
-    const track = document.querySelector('.carousel-track');
-    const slides = document.querySelectorAll('.slide');
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.dot');
+      let currentIndex = 0;
   
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        let index = dot.getAttribute('data-slide');
+      // Ensure slides and dots are found
+      if (slides.length === 0 || dots.length === 0) {
+        console.error('Slides or dots not found in the DOM.');
+        return;
+      }
   
-        // Move track
-        track.style.transform = `translateX(-${index * 100}%)`;
-  
-        // Highlight dot
-        dots.forEach(d => d.classList.remove('active'));
-        dot.classList.add('active');
+      function showSlide(index) {
+        console.log(`Showing slide ${index}`); // Debugging log
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+      }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Automatically change slides every 5 seconds
+    setInterval(nextSlide, 5000);
+
+      // Add click event listeners to dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          console.log(`Dot ${index} clicked`); // Debugging log
+          currentIndex = index;
+          showSlide(currentIndex);
+        });
       });
+  
+      // Initial slide setup
+      showSlide(currentIndex);
     });
   </script>
   
