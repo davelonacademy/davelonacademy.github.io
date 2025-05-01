@@ -441,11 +441,6 @@ body {
 	background-color: #2d287c;
   }
   
-  footer {
-	background-color: #f1f1f1;
-	padding: 2rem;
-	text-align: center;
-  }
   
   .footer-content {
 	display: flex;
@@ -677,3 +672,146 @@ body {
   .cta-button:hover {
 	background-color: #1e1a5a;
   }
+
+  footer {
+	color: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+	background-position: center bottom;
+	background-size: 120px;
+	opacity: 0.95;
+  }
+
+  .program-card details {
+	margin-top: 1rem;
+	background-color: #f0f3fc;
+	border-radius: 6px;
+	padding: 0.75rem 1rem;
+	font-size: 0.95rem;
+	border: 1px solid #d0d6ea;
+  }
+  
+  .program-card details summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: #2d287c;
+	margin-bottom: 0.5rem;
+  }
+  
+  .program-card details ul {
+	margin-top: 0.5rem;
+	padding-left: 1.2rem;
+	text-align: left;
+  }
+  
+  .program-card details li {
+	margin-bottom: 0.4rem;
+	line-height: 1.4;
+  }
+
+  .cta-ending {
+	background-color: #f5f2fc;
+	padding: 4rem 2rem;
+	text-align: center;
+	border-top: 2px solid #e0e0f0;
+  }
+  
+  .cta-ending h2 {
+	font-size: 2rem;
+	color: #2d287c;
+	margin-bottom: 1rem;
+  }
+  
+  .cta-ending p {
+	font-size: 1.1rem;
+	color: #444;
+	max-width: 700px;
+	margin: 0.5rem auto;
+	line-height: 1.6;
+  }
+  
+  .cta-ending .btn {
+	margin-top: 2rem;
+	display: inline-block;
+	padding: 0.8rem 1.6rem;
+	background-color: #2d287c;
+	color: white;
+	border-radius: 8px;
+	font-weight: 600;
+	text-decoration: none;
+  }
+
+  /* Program Courses Section */
+.program-section {
+	padding: 4rem 2rem;
+	background-color: #fafbff;
+	text-align: center;
+  }
+  
+  .program-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 2rem;
+  }
+  
+  .program-card {
+	flex: 1;
+	min-width: 280px;
+	background: white;
+	border-radius: 12px;
+	padding: 2rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	border-top: 5px solid #2d287c;
+	text-align: left;
+  }
+  
+  .program-card h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: #2d287c;
+  }
+  
+  .program-card p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	color: #444;
+  }
+  
+  .program-card.highlight {
+	border-top-color: #D4AF37;
+	position: relative;
+  }
+  
+  .program-card .badge {
+	position: absolute;
+	top: -14px;
+	right: 12px;
+	background-color: #D4AF37;
+	color: white;
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 4px 8px;
+	border-radius: 4px;
+  }
+  
+  .db-optimization {
+	border-top-color: #6c63ff;
+  }
+  
+  .data-translator {
+	border-top-color: #D4AF37;
+  }
+  
+  .data-science {
+	border-top-color: #00bfa6;
+  }
+  
+  @media (max-width: 768px) {
+	.program-cards {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+  
